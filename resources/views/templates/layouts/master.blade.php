@@ -63,6 +63,7 @@
     </nav>
 
     @yield('content')
+    @include('templates.partials.back-to-top')
 </div>
 
 <!-- Scripts -->
