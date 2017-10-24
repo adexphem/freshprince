@@ -817,6 +817,24 @@ jQuery(function () {
     });
 });
 
+jQuery(document).ready(function () {
+    jQuery(".basic-back-to-top").addClass("hidden");
+
+    jQuery(window).scroll(function () {
+        if (jQuery(this).scrollTop() <= 10) {
+            jQuery(".basic-back-to-top").addClass("hidden");
+        } else {
+            jQuery(".basic-back-to-top").removeClass("hidden");
+        }
+    });
+
+    jQuery("body").on("click", ".basic-back-to-top", function () {
+        return jQuery("html,body").animate({
+            scrollTop: 0
+        }, 1000);
+    });
+});
+
 /***/ }),
 /* 10 */
 /***/ (function(module, exports, __webpack_require__) {
@@ -42101,7 +42119,7 @@ if (false) {
 /* 40 */
 /***/ (function(module, exports) {
 
-throw new Error("Module build failed: ModuleNotFoundError: Module not found: Error: Can't resolve './images/top-icon%402x.png' in '/Users/andelastc/Documents/apps/laravel/freshprince/resources/assets/sass'\n    at factoryCallback (/Users/andelastc/Documents/apps/laravel/freshprince/node_modules/webpack/lib/Compilation.js:269:40)\n    at factory (/Users/andelastc/Documents/apps/laravel/freshprince/node_modules/webpack/lib/NormalModuleFactory.js:235:20)\n    at resolver (/Users/andelastc/Documents/apps/laravel/freshprince/node_modules/webpack/lib/NormalModuleFactory.js:60:20)\n    at asyncLib.parallel.e (/Users/andelastc/Documents/apps/laravel/freshprince/node_modules/webpack/lib/NormalModuleFactory.js:127:20)\n    at /Users/andelastc/Documents/apps/laravel/freshprince/node_modules/async/dist/async.js:3861:9\n    at /Users/andelastc/Documents/apps/laravel/freshprince/node_modules/async/dist/async.js:421:16\n    at iteratorCallback (/Users/andelastc/Documents/apps/laravel/freshprince/node_modules/async/dist/async.js:996:13)\n    at /Users/andelastc/Documents/apps/laravel/freshprince/node_modules/async/dist/async.js:906:16\n    at /Users/andelastc/Documents/apps/laravel/freshprince/node_modules/async/dist/async.js:3858:13\n    at resolvers.normal.resolve (/Users/andelastc/Documents/apps/laravel/freshprince/node_modules/webpack/lib/NormalModuleFactory.js:119:22)\n    at onError (/Users/andelastc/Documents/apps/laravel/freshprince/node_modules/enhanced-resolve/lib/Resolver.js:65:10)\n    at loggingCallbackWrapper (/Users/andelastc/Documents/apps/laravel/freshprince/node_modules/enhanced-resolve/lib/createInnerCallback.js:31:19)\n    at runAfter (/Users/andelastc/Documents/apps/laravel/freshprince/node_modules/enhanced-resolve/lib/Resolver.js:158:4)\n    at innerCallback (/Users/andelastc/Documents/apps/laravel/freshprince/node_modules/enhanced-resolve/lib/Resolver.js:146:3)\n    at loggingCallbackWrapper (/Users/andelastc/Documents/apps/laravel/freshprince/node_modules/enhanced-resolve/lib/createInnerCallback.js:31:19)\n    at next (/Users/andelastc/Documents/apps/laravel/freshprince/node_modules/tapable/lib/Tapable.js:252:11)\n    at /Users/andelastc/Documents/apps/laravel/freshprince/node_modules/enhanced-resolve/lib/UnsafeCachePlugin.js:40:4\n    at loggingCallbackWrapper (/Users/andelastc/Documents/apps/laravel/freshprince/node_modules/enhanced-resolve/lib/createInnerCallback.js:31:19)\n    at runAfter (/Users/andelastc/Documents/apps/laravel/freshprince/node_modules/enhanced-resolve/lib/Resolver.js:158:4)\n    at innerCallback (/Users/andelastc/Documents/apps/laravel/freshprince/node_modules/enhanced-resolve/lib/Resolver.js:146:3)\n    at loggingCallbackWrapper (/Users/andelastc/Documents/apps/laravel/freshprince/node_modules/enhanced-resolve/lib/createInnerCallback.js:31:19)\n    at next (/Users/andelastc/Documents/apps/laravel/freshprince/node_modules/tapable/lib/Tapable.js:252:11)\n    at innerCallback (/Users/andelastc/Documents/apps/laravel/freshprince/node_modules/enhanced-resolve/lib/Resolver.js:144:11)\n    at loggingCallbackWrapper (/Users/andelastc/Documents/apps/laravel/freshprince/node_modules/enhanced-resolve/lib/createInnerCallback.js:31:19)\n    at next (/Users/andelastc/Documents/apps/laravel/freshprince/node_modules/tapable/lib/Tapable.js:249:35)\n    at resolver.doResolve.createInnerCallback (/Users/andelastc/Documents/apps/laravel/freshprince/node_modules/enhanced-resolve/lib/DescriptionFilePlugin.js:44:6)\n    at loggingCallbackWrapper (/Users/andelastc/Documents/apps/laravel/freshprince/node_modules/enhanced-resolve/lib/createInnerCallback.js:31:19)\n    at afterInnerCallback (/Users/andelastc/Documents/apps/laravel/freshprince/node_modules/enhanced-resolve/lib/Resolver.js:168:10)\n    at loggingCallbackWrapper (/Users/andelastc/Documents/apps/laravel/freshprince/node_modules/enhanced-resolve/lib/createInnerCallback.js:31:19)\n    at next (/Users/andelastc/Documents/apps/laravel/freshprince/node_modules/tapable/lib/Tapable.js:252:11)");
+// removed by extract-text-webpack-plugin
 
 /***/ })
 /******/ ]);

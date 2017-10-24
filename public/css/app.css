@@ -8365,6 +8365,22 @@ button.close {
   }
 }
 
+.g-pink {
+  background-color: #D9008A;
+}
+
+.g-red {
+  background-color: red;
+}
+
+.g-yellow {
+  background-color: #cbb956;
+}
+
+.g-success {
+  background-color: #2ab27b;
+}
+
 body {
   font-family: "Montserrat-Light", Montserrat-Black;
   font-size: 15px;
@@ -8380,18 +8396,89 @@ body ._spacer_down_10 {
   margin-bottom: 10px;
 }
 
+body .marketing-section {
+  font-family: Montserrat-ExtraLight, Tahoma, Helvetica, Arial;
+}
+
+body .marketing-section ul {
+  list-style-type: none;
+}
+
+body .marketing-section ul li {
+  font-size: 14px;
+  float: left;
+  width: 23.333%;
+  font-family: "Montserrat Alternates", Montserrat-ExtraLight;
+  padding: 20px 15px;
+  border: 1px solid rgba(255, 98, 43, 0.1);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 3px;
+  color: #ffffff;
+  margin: 0px 2px;
+}
+
+body .marketing-section .section-title {
+  font-weight: 600;
+  padding: 0px 0px 15px;
+}
+
+body .marketing-section .section-content input[type=email] {
+  padding: 4px 20px;
+  width: 80%;
+  max-width: 400px;
+  min-width: 120px;
+}
+
+body .marketing-section .section-content button {
+  background-color: #6E0207;
+  color: #ffffff;
+  font-size: 14px;
+  border: none;
+  padding: 7px 20px;
+  margin-left: -5px;
+}
+
+#myCarousel {
+  border-top: 1px solid #ff622b;
+}
+
 label {
   font-weight: normal;
 }
 
+.pin-login {
+  background: rgba(255, 98, 43, 0.1);
+}
+
+.floating {
+  -webkit-animation-name: floating;
+  animation-name: floating;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+}
+
+.card_weprint {
+  overflow: hidden;
+  width: auto;
+  background: url("/images/banner/what_we_print.jpg") no-repeat;
+  height: 680px;
+  width: 100%;
+  background-size: cover;
+}
+
 .top-thin-bar {
-  background-image: -webkit-gradient(linear, right top, left top, from(#EE00BE), color-stop(31%, #4C60E5), color-stop(57%, #838495), color-stop(76%, #D2DB00), to(#D9008A));
-  background-image: linear-gradient(-90deg, #EE00BE 0%, #4C60E5 31%, #838495 57%, #D2DB00 76%, #D9008A 100%);
+  background-image: -webkit-gradient(linear, right top, left top, from(#EE00BE), color-stop(31%, #4C60E5), color-stop(57%, #838495), color-stop(76%, #D2DB00), color-stop(100%, #D9008A), color-stop(80%, #9C4305));
+  background-image: linear-gradient(-90deg, #EE00BE 0%, #4C60E5 31%, #838495 57%, #D2DB00 76%, #D9008A 100%, #9C4305 80%);
   height: 0.15em;
 }
 
 .top-contact-social-media {
-  font-size: 10px;
+  font-size: 12px;
   text-align: center;
   background: #ffffff;
   line-height: 3em;
@@ -8399,9 +8486,29 @@ label {
 
 .top-contact-social-media > div {
   border-bottom: 1px solid rgba(240, 240, 240, 0.6);
-  color: #000000;
-  font-family: "Montserrat-ExtraLight";
+  color: #6E0207;
+  font-family: "Montserrat-Light";
   font-weight: 400;
+}
+
+.navbar-fixed-top {
+  left: 0;
+  position: fixed;
+  right: 0;
+  z-index: 1030;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: #6E0207;
+  font-weight: 200;
+  font-family: Montserrat-SemiBold, Tahoma, Helvetica, Arial;
+}
+
+.navbar-default .navbar-nav > li:hover {
+  background: rgba(255, 98, 43, 0.1);
+  color: #000000;
+  font-weight: 500;
+  cursor: pointer;
 }
 
 .navbar {
@@ -8409,7 +8516,8 @@ label {
 }
 
 .navbar .navbar-brand img {
-  height: 1.5em;
+  height: 70px;
+  margin-top: -39px;
 }
 
 .navbar .navbar-default {
@@ -8436,7 +8544,7 @@ label {
 .w3-card-4 {
   float: left;
   width: 31.333%;
-  margin: 0px 5px 10px;
+  margin: 0px 10px;
   -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1), 0 2px 10px 0 rgba(0, 0, 0, 0.11);
           box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1), 0 2px 10px 0 rgba(0, 0, 0, 0.11);
   border-radius: .2rem;
@@ -8454,6 +8562,7 @@ label {
 
 .w3-card-4 .w3-center {
   text-align: center;
+  color: #6E0207;
 }
 
 .btn-primary {
@@ -8474,19 +8583,23 @@ label {
 }
 
 .card_title {
-  font-weight: 600;
-  overflow-x: hidden;
   height: 20px;
-  text-overflow: ellipsis;
+  font-weight: 400;
+  overflow-x: hidden;
   white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.card_price {
+  font-size: 12px;
 }
 
 .basic-back-to-top {
   position: fixed;
   bottom: 2em;
-  background-color: #305C8A;
+  background-color: #6E0207;
   border-radius: 5px;
-  border: 1px solid #305C8A;
+  border: 1px solid #6E0207;
   right: -3px;
   z-index: 10;
   padding: 7px 6px;
@@ -8497,11 +8610,9 @@ label {
 }
 
 .basic-back-to-top .inner_img {
-  background: url(//images.konga.com/v2/s3.amazonaws.com/www_konga_com/rendering-service/top-icon%402x.png) no-repeat;
-  background-size: 29px;
-  width: 35px;
-  height: 33px;
-  margin-left: 7px;
+  background: url("/images/up_arrow.png") no-repeat;
+  height: 12px;
+  margin-left: 4px;
   margin-top: -3px;
 }
 
@@ -8509,9 +8620,9 @@ label {
   width: 45px;
   height: 30px;
   font-size: 8px;
-  color: #FFF;
+  color: #FFFFFF;
   text-align: center;
-  line-height: 8px;
+  line-height: 10px;
 }
 
 .basic-back-to-top .inner_text .to-the {
@@ -8529,10 +8640,75 @@ label {
   margin-top: 5px;
 }
 
-@media (max-width: 601px) {
+#footer {
+  padding: 15px;
+  color: #e1e1e1;
+  font-size: 12px;
+  background-color: #333333;
+  font-family: Montserrat-ExtraLight, Tahoma, Helvetica, Arial;
+}
+
+#footer .container {
+  text-align: center;
+}
+
+#footer .container .col {
+  padding: 5px 5px;
+}
+
+#footer .container .col .title {
+  font-weight: 600;
+}
+
+#footer .container .col .listing > span {
+  display: block;
+  padding: 10px 5px;
+}
+
+@media (max-width: 701px) {
+  body .marketing-section .section-content input[type=email] {
+    max-width: 230px;
+    min-width: 80px;
+    border: 1px solid #cecece;
+    padding: 5px 8px;
+  }
+
   .w3-card-4 {
     width: 100%;
     margin: 5px 0px 10px;
+  }
+
+  .whity-bg .marketing-section ul {
+    list-style-type: none;
+  }
+
+  .whity-bg .marketing-section ul li {
+    width: 43%;
+    padding: 20px 25px;
+    margin: 0px 2px;
+  }
+
+  .card_weprint {
+    background-size: cover;
+    background-position: -133px 0px;
+  }
+
+  .navbar .navbar-brand img {
+    height: 60px;
+    margin-top: -23px;
+  }
+}
+
+@media (max-width: 420px) {
+  .whity-bg .marketing-section ul {
+    list-style-type: none;
+  }
+
+  .whity-bg .marketing-section ul li {
+    width: 35%;
+    padding: 20px 10px;
+    margin: 0px 2px;
+    margin-bottom: 10px;
   }
 }
 

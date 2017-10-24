@@ -11,26 +11,14 @@
 
         <div class="item active">
             <img src="{{url('images/banner/banner1.png')}}" alt="Banner1">
-            <div class="carousel-caption">
-                <h3>WE ARE ROYAL</h3>
-                <p>We don't just print, we pay attention to every detail.</p>
-            </div>
         </div>
 
         <div class="item">
             <img src="{{url('images/banner/banner2.jpg')}}" alt="Banner1">
-            <div class="carousel-caption">
-                <h3>COLLECTIONS</h3>
-                <p>We deliver to the letters!</p>
-            </div>
         </div>
 
         <div class="item">
             <img src="{{url('images/banner/banner3.jpg')}}" alt="Banner1">
-            <div class="carousel-caption">
-                <h3>New York</h3>
-                <p>We love the Big Apple!</p>
-            </div>
         </div>
 
     </div>
