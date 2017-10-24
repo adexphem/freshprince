@@ -23,9 +23,8 @@ add('writable_dirs', []);
 set('allow_anonymous_stats', false);
 
 // Hosts
-
 host('http://freshprincedigitalprinters.com/')
-    ->set('deploy_path', 'home/freshpri/public_html}');
+    ->set('deploy_path', 'home/freshpri/public_html');
     
 // Tasks
 
