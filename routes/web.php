@@ -15,6 +15,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/print', 'PrintController@index')->name('prints');
+Route::get('/about', 'AboutController@index')->name('about');
+Route::get('/products', 'ProductController@index')->name('products');
 
 Auth::routes();
 

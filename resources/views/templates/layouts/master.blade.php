@@ -21,7 +21,7 @@
 
                 <!-- Branding Image -->
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    <img src="{{ asset('images/freshprince.png') }}" alt="FreshPrince">
+                    <img src="{{ asset('images/fpdp_logo.png') }}" alt="FreshPrince">
                 </a>
             </div>
 
@@ -68,5 +68,8 @@
 
 <!-- Scripts -->
 <script src="{{ asset('js/app.js') }}"></script>
+
+<!-- Footer -->
+@include('templates.layouts.master-footer')
 </body>
 </html>

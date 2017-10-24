@@ -35,3 +35,22 @@ jQuery(function(){
         });
     });
 });
+
+jQuery(document).ready(function() {
+  jQuery(".basic-back-to-top").addClass("hidden")
+
+  jQuery(window).scroll(function() {
+    if (jQuery(this).scrollTop() <= 10 ) {
+      jQuery(".basic-back-to-top").addClass("hidden")
+    } else {
+      jQuery(".basic-back-to-top").removeClass("hidden")
+    }
+  });
+
+  jQuery("body").on("click", ".basic-back-to-top", function() {
+      return jQuery("html,body").animate({
+        scrollTop: 0
+      }, 1000);
+  });
+
+});
